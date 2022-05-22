@@ -12,5 +12,6 @@ export async function createUser(username: string) {
     }
   });
   const user = await response.json();
-  return user.token;
+  console.log(user)
+  return user;
 }
